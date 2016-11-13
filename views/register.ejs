@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Christmas tree app</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p>Welcome to <%= title %></p>
+    <% if (name.length) { %>
+      <p>Hi <%= name %> <%= surname %></p>
+    <% } %>
+    <form method='POST'>
+      <label for='email'>
+        Email
+      </label>
+      <input name='email' />
+      <br />
+      <label for='name'>
+        Name
+      </label>
+      <input name='name' />
+      <br />
+      <label for='surname'>
+        Surname
+      </label>
+      <input name='surname' />
+      <br />
+      <label for='password'>
+        Password
+      </label>
+      <input 
+        type='password'
+        name='password' />
+
+      <input 
+        type='submit'
+        value='Register' />
+
+    </form>
+    <a href='/login'>LOGIN</a>
+    <a href='/'>HOME</a>
+  </body>
+</html>
